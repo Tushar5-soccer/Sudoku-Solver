@@ -164,6 +164,7 @@ def login():
                                         messagebox.showerror("ERROR", "Invalid Date of Birth. \n Enter again.")
                                     else:
                                         dob=dobd+"/"+dobm+"/"+doby
+                                        messagebox.showinfo("INFO", "Congratulations . \n Admission Complete. Your Course is "+cc)
                                         sql="INSERT INTO project(name , email , password , marks12 , cc , fname , mname , dob , gender , adhar , pnum , address)VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
                                         val=(name, email, password, marks12, cc, fname, mname, dob, gender, adhar, pnum, address)
                                         mycur.execute(sql,val)
@@ -178,6 +179,7 @@ def login():
                                         messagebox.showerror("ERROR", "Invalid Date of Birth. \n Enter again.")
                                     else:
                                         dob=dobd+"/"+dobm+"/"+doby
+                                        messagebox.showinfo("INFO", "Congratulations . \n Admission Complete. Your Course is "+cc)
                                         sql="INSERT INTO project(name , email , password , marks12 , cc , fname , mname , dob , gender , adhar , pnum , address)VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
                                         val=(name, email, password, marks12, cc, fname, mname, dob, gender, adhar, pnum, address)
                                         mycur.execute(sql,val)
